@@ -1,0 +1,34 @@
+body {
+    background: linear-gradient(pink, #ffcccc);
+    text-align: center;
+    font-family: Arial;
+    overflow: hidden;
+}
+
+.container {
+    margin-top: 100px;
+}
+
+button {
+    padding: 10px 20px;
+    background: red;
+    color: white;
+    border: none;
+    border-radius: 10px;
+}
+
+.oculto {
+    display: none;
+}
+
+/* Corazones flotando */
+body::before {
+    content: "❤️ 💕 💖 💘 💝";
+    position: absolute;
+    animation: flotar 10s linear infinite;
+}
+
+@keyframes flotar {
+    0% { top: 100%; }
+    100% { top: -10%; }
+}
