@@ -1,34 +1,85 @@
 body {
-    background: linear-gradient(pink, #ffcccc);
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(to bottom, #001f3f, #0074D9);
+    color: white;
     text-align: center;
-    font-family: Arial;
     overflow: hidden;
 }
 
-.container {
-    margin-top: 100px;
+/* Brillo */
+.overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle, rgba(255,255,255,0.2), transparent);
+    animation: glow 5s infinite alternate;
 }
 
-button {
-    padding: 10px 20px;
-    background: red;
-    color: white;
+@keyframes glow {
+    from { opacity: 0.3; }
+    to { opacity: 0.7; }
+}
+
+.container {
+    position: relative;
+    top: 100px;
+}
+
+.titulo {
+    font-size: 2.5em;
+}
+
+.subtitulo {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+/* Botón */
+.btn {
+    padding: 15px 30px;
+    font-size: 18px;
+    background: #00cfff;
     border: none;
-    border-radius: 10px;
+    border-radius: 30px;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    transform: scale(1.1);
+    background: #0099cc;
+}
+
+/* Carta */
+.carta {
+    margin-top: 30px;
+    padding: 20px;
+    background: rgba(255,255,255,0.1);
+    border-radius: 15px;
+    animation: aparecer 1s ease;
 }
 
 .oculto {
     display: none;
 }
 
-/* Corazones flotando */
-body::before {
-    content: "❤️ 💕 💖 💘 💝";
-    position: absolute;
-    animation: flotar 10s linear infinite;
+@keyframes aparecer {
+    from { opacity: 0; transform: translateY(50px); }
+    to { opacity: 1; transform: translateY(0); }
 }
 
-@keyframes flotar {
-    0% { top: 100%; }
-    100% { top: -10%; }
+/* Flores cayendo */
+.flower {
+    position: absolute;
+    top: -50px;
+    font-size: 24px;
+    animation: caer linear infinite;
+}
+
+@keyframes caer {
+    to {
+        transform: translateY(100vh);
+    }
 }

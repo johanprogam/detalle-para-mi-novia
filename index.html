@@ -1,21 +1,33 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <title>Para Ti ❤️</title>
-    <link rel="stylesheet" href="styles.css">
+<meta charset="UTF-8">
+<title>Para Ti 💙</title>
+<link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-<div class="container">
-    <h1>💖 Para el amor de mi vida 💖</h1>
-    <p>Eres la persona más especial que tengo 💕</p>
-    <button onclick="mostrarMensaje()">Haz clic aquí 💌</button>
+<div class="overlay"></div>
 
-    <div id="mensaje" class="oculto">
-        <p>Gracias por existir, te amo muchísimo ❤️</p>
+<div class="container">
+    <h1 class="titulo">💙 Para el amor de mi vida 💙</h1>
+    <p class="subtitulo">Eres mi lugar favorito en el mundo 🌸</p>
+
+    <button class="btn" onclick="abrirCarta()">Ábreme 💌</button>
+
+    <div id="carta" class="carta oculto">
+        <h2>Mi amor 💙</h2>
+        <p>
+            Desde que llegaste a mi vida todo cambió... 🌸<br><br>
+            Eres mi paz, mi alegría, mi motivación.<br>
+            Cada momento contigo es mágico ✨<br><br>
+            Prometo seguir haciéndote sonreír siempre 💖<br><br>
+            Te amo muchísimo 💙
+        </p>
     </div>
 </div>
+
+<audio id="musica" src="musica.mp3"></audio>
 
 <script src="script.js"></script>
 </body>
