@@ -1,35 +1,48 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-<meta charset="UTF-8">
-<title>Para Ti 💙</title>
-<link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Para Ti 💙</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600;700&family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-<div class="overlay"></div>
+    <!-- Animated Particles/Glow overlay -->
+    <div class="overlay"></div>
+    <div class="ambient-glow"></div>
 
-<div class="container">
-    <h1 class="titulo">💙 Para el amor de mi vida 💙</h1>
-    <p class="subtitulo">Eres mi lugar favorito en el mundo 🌸</p>
+    <div class="container">
+        <!-- Header text -->
+        <h1 class="titulo">💙 Para el amor de mi vida 💙</h1>
+        <p class="subtitulo">Eres mi lugar favorito en el mundo 🌸</p>
 
-    <button class="btn" onclick="abrirCarta()">Ábreme 💌</button>
+        <!-- Main Button -->
+        <button id="btn-abrir" class="btn" onclick="abrirCarta()">
+            <span>Ábreme 💌</span>
+            <div class="btn-ripple"></div>
+        </button>
 
-    <div id="carta" class="carta oculto">
-        <h2>Mi amor 💙</h2>
-        <p>
-            Desde que llegaste a mi vida todo cambió... 🌸<br><br>
-            Eres mi paz, mi alegría, mi motivación.<br>
-            Cada momento contigo es mágico ✨<br><br>
-            Prometo seguir haciéndote sonreír siempre 💖<br><br>
-            Te amo muchísimo 💙
-        </p>
+        <!-- Glassmorphic Letter -->
+        <div id="carta" class="carta">
+            <h2 class="carta-titulo">Mi amor 💙</h2>
+            <p class="carta-texto">
+                Desde que llegaste a mi vida todo cambió... 🌸<br><br>
+                Eres mi paz, mi alegría, mi motivación.<br>
+                Cada momento contigo es mágico ✨<br><br>
+                Prometo seguir haciéndote sonreír siempre 💖<br><br>
+                <span class="firma">Te amo muchísimo 💙</span>
+            </p>
+        </div>
     </div>
-</div>
 
-<audio id="musica" src="musica.mp3"></audio>
+    <!-- Music element -->
+    <audio id="musica" src="Silvestre Dangond, Nicky Jam - Cásate Conmigo (Letra  Lyrics).mp3"></audio>
 
-<script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
-<!-- actualización -->
